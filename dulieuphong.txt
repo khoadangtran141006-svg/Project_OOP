@@ -1,0 +1,4 @@
+P002|DGC|A|4|2|PhongThuong|thuong|800000.0|Da dat|80000.0|khong
+P009|ABC|G|4|2|PhongVip|tong thong|800000.0|Dang su dung|Co|Co
+P001|HBC|Y|9|6|PhongThuong|thuong|80000.0|Trong|20000.0|co
+P119|KMN|T|2|2|PhongVip|vip|2.0E7|Da dat|Co|Co
