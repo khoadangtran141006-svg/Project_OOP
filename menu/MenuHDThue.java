@@ -86,12 +86,15 @@ public class MenuHDThue {
                 case 3 -> {
                     System.out.print("Nhập mã hợp đồng cần tìm: ");
                     String mahd = sc.nextLine();
+
                     HDThue hd = ds.timkiem(mahd);
+
                     if (hd != null) {
-                        System.out.println(hd);
-                      
-        
-            
+                      System.out.println(hd);
+                    } else {
+                    System.out.println("Không tìm thấy hợp đồng!");
+                    }
+                }
                 case 4 -> {
                     try {
                         System.out.print("Nhập mã hợp đồng cần sửa: ");

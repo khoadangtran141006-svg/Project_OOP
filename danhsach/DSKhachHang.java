@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class DSKhachHang {
 
-    private Scanner sc = new Scanner(System.in); 
+
     private KhachHang[] dskhachhang;
     private int n;
     private boolean isReading = false;
@@ -34,32 +34,46 @@ public class DSKhachHang {
     }
 
     public void them() {
-        if(dskhachhang==null){
-            dskhachhang= new KhachHang[0];
-            n=0;
-        }
-        System.out.println("\n--- Them khach hang moi ---");
-        KhachHang khmoi= new KhachHang();
-
-        String ma;
-        while(true){
-            System.out.println("Nhap ma khach hangL: ");
-            ma=sc.nextLine();
-            if(maKhachHangTrung(ma, dskhachhang, n)){
-                System.out.println("Ma da ton tai, vui long nhap lai!");
-            }
-            else{
-                khachHangMoi.nhap();
-                khachHangMoi.setmakhach(ma);
-                break;
-            }
-            dskhachhang=Arrays.copyOf(dskhachhang,n+1);
-            dskhachhang[n]=khachHangMoi;
-            n++;
-            System.out.println("Da them khach hang moi thanh cong");
-            ghiFile();
-            }
+    if (dskhachhang == null) {
+        dskhachhang = new KhachHang[0];
+        n = 0;
     }
+
+    System.out.println("\n--- Them khach hang moi ---");
+
+    KhachHang khmoi = new KhachHang();
+    khmoi.nhap();
+
+    String ma = khmoi.getmakhach();
+
+    if (maKhachHangTrung(ma, dskhachhang, n)) {
+        System.out.println("Ma da ton tai, vui long nhap lai!");
+        return;
+    }
+
+    them(khmoi);
+}
+
+// Thêm một khách hàng đã có thông tin vào danh sách
+public void them(KhachHang kh) {
+    if (dskhachhang == null) {
+        dskhachhang = new KhachHang[0];
+        n = 0;
+    }
+
+    if (kh == null) {
+        return;
+    }
+
+    dskhachhang = Arrays.copyOf(dskhachhang, n + 1);
+    dskhachhang[n] = new KhachHang(kh);
+    n++;
+
+    if (!isReading) {
+        System.out.println("Da them khach hang moi thanh cong");
+        ghiFile();
+    }
+}
 
     public boolean xoa(String makhach) {
         int vitri = -1;

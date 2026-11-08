@@ -1,9 +1,7 @@
 {
-  "java.project.sourcePaths": [
-    "danhsach",
-    "doituong",
-    "menu"
-  ],
-  "java.project.outputPath": "bin",
-  "java.configuration.updateBuildConfiguration": "automatic"
+    "java.project.sourcePaths": [
+        "."
+    ],
+    "java.project.outputPath": "bin",
+    "java.configuration.updateBuildConfiguration": "automatic"
 }
