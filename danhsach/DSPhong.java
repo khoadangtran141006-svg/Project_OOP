@@ -12,10 +12,9 @@ import java.util.Scanner;
 
 public class DSPhong {
 
-    Scanner sc = new Scanner(System.in);
+    Scanner sc = doituong.Input.get();
     private int n;
     private Phong[] ds;
-    private boolean isReading = false;
 
     public DSPhong() {
         n = 0;
@@ -322,7 +321,6 @@ public class DSPhong {
             return;
         }
 
-        isReading = true;
         Scanner scfile = new Scanner(file);
         n = 0;
         ds = new Phong[0];
@@ -364,7 +362,6 @@ public class DSPhong {
         }
 
         scfile.close();
-        isReading = false;
         System.out.println("[SUCCESS] Da doc danh sach phong!");
     }
 

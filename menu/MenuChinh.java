@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class MenuChinh {
 
-    private Scanner sc = new Scanner(System.in);
+    private Scanner sc = doituong.Input.get();
 
     // Các danh sách dùng chung
     private DSPhong dsPhong;

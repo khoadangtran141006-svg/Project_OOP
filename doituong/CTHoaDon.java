@@ -5,7 +5,7 @@ import danhsach.DSPhong;
 import java.util.Scanner;
 
 public class CTHoaDon {
-    private Scanner sc = new Scanner(System.in);
+    private Scanner sc = doituong.Input.get();
 
     private String maCTHoaDon;  // Mã chi tiết hóa đơn
     private String maHoaDon;    // Mã hóa đơn

@@ -10,7 +10,7 @@ public class CTDichVu {
     private double donGia;
     private double thanhTien;
 
-    Scanner sc = new Scanner(System.in);
+    Scanner sc = doituong.Input.get();
 
     // ======= Constructor mặc định =======
     public CTDichVu() {

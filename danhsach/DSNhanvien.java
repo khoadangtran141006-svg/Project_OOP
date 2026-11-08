@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class DSNhanvien {
 
-    Scanner sc = new Scanner(System.in);
+    Scanner sc = doituong.Input.get();
     private int n;
     private Nhanvien[] dsnv;
     private boolean isReading = false;
@@ -185,7 +185,6 @@ public class DSNhanvien {
     }
 
     public void xoa() {
-        Scanner sc = new Scanner(System.in);
         System.out.print("Nhập mã nhân viên cần xóa: ");
         String ma = sc.nextLine();
 
@@ -234,7 +233,6 @@ public class DSNhanvien {
     }
 
     public void sua() {
-        Scanner sc = new Scanner(System.in);
         System.out.print("Nhập mã nhân viên cần sửa: ");
         String ma = sc.nextLine();
         boolean timma = false;

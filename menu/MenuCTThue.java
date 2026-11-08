@@ -6,11 +6,11 @@ public class MenuCTThue {
     private Scanner sc;
     private DSCTThue dsctthue;
     public MenuCTThue(){
-        this.sc=new Scanner(System.in);
+        this.sc=doituong.Input.get();
         this.dsctthue=new DSCTThue();
     }
     public MenuCTThue(DSCTThue dsctthue){
-        this.sc= new Scanner(System.in);
+        this.sc= doituong.Input.get();
         this.dsctthue=dsctthue;
     }
     public void chay(){
@@ -83,6 +83,5 @@ public class MenuCTThue {
                 }
             } 
         } while(chon!=0); 
-        sc.close();        
     }
 }

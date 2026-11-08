@@ -35,7 +35,7 @@ public class DichVu {
     public void setSoLuong(int soLuong) { this.soLuong = soLuong; }
 
     public void nhap() {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = doituong.Input.get();
         System.out.print("Nhập mã dịch vụ: ");
         maDichVu = sc.nextLine();
         System.out.print("Nhập tên dịch vụ: ");
@@ -44,7 +44,6 @@ public class DichVu {
         donGia = sc.nextDouble();
         System.out.print("Nhập số lượng: ");
         soLuong = sc.nextInt();
-        sc.close();
     }
 
     public void xuat() {

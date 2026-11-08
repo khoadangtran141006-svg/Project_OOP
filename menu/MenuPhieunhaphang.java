@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class MenuPhieunhaphang {
 
     private DSPhieunhaphang dspnh;
-    private Scanner sc = new Scanner(System.in);
+    private Scanner sc = doituong.Input.get();
 
     public MenuPhieunhaphang(DSPhieunhaphang dsPNHangChung) {
         this.dspnh = dsPNHangChung;

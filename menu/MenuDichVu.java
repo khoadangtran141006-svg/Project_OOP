@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class MenuDichVu {
-    private final Scanner sc = new Scanner(System.in);
+    private final Scanner sc = doituong.Input.get();
     private DSDichVu dsDV;
 
     // Nhận danh sách dịch vụ dùng chung (từ MenuChinh)

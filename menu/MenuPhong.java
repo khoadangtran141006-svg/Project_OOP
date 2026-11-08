@@ -12,23 +12,13 @@ import java.util.Scanner; // Cần import thêm
 public class MenuPhong {
     private Scanner sc;
     private DSPhong ds;
-    private void fixVietnameseEncoding() {
-        try {
-            // Thiết lập System.out để sử dụng UTF-8
-            // Đây là giải pháp mạnh mẽ nhất, không phụ thuộc vào IDE hay Terminal
-            System.setOut(new PrintStream(System.out, true, StandardCharsets.UTF_8.name()));
-        } catch (Exception e) {
-            // In lỗi ra standard error stream (stderr) nếu việc thiết lập thất bại
-            System.err.println("Lỗi cấu hình encoding: " + e.getMessage());
-        }
-    }
     public MenuPhong(DSPhong ds) {
-        this.sc = new Scanner(System.in);
+        this.sc = doituong.Input.get();
         this.ds = ds;
     }
 
     public MenuPhong() {
-        this.sc = new Scanner(System.in);
+        this.sc = doituong.Input.get();
         this.ds = new DSPhong();
 
         try {

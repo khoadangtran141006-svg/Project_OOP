@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class MenuCTDichVu {
-    private final Scanner sc = new Scanner(System.in);
+    private final Scanner sc = doituong.Input.get();
     private final DSCTDichVu dsCT;
     private final DSDichVu dsDV;
 

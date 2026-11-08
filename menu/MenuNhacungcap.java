@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class MenuNhacungcap {
 
     private DSNhacungcap dsncc;
-    private Scanner sc = new Scanner(System.in);
+    private Scanner sc = doituong.Input.get();
 
     public MenuNhacungcap(DSNhacungcap dsNCCapChung) {
         this.dsncc = dsNCCapChung;

@@ -13,7 +13,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class MenuHoaDon {
-    private final Scanner sc = new Scanner(System.in);
+    private final Scanner sc = doituong.Input.get();
     private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
     private DSHoaDon dsHD;

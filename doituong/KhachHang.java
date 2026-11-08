@@ -5,7 +5,7 @@ public class KhachHang{
     private String mahd;
     private String makhach;
     private String maphong;
-    Scanner sc = new Scanner(System.in);
+    Scanner sc = doituong.Input.get();
 
     // Hàm thiết lập không tham số
     public KhachHang(){}
@@ -48,7 +48,6 @@ public class KhachHang{
         makhach=sc.nextLine();
         System.out.print("Nhập mã phòng: ");
         maphong=sc.nextLine();
-        sc.close();
     }
     public void xoa(){
         makhach=maphong=mahd=null;
@@ -69,7 +68,6 @@ public class KhachHang{
             System.out.print("Nhập mã phòng mới: ");
             maphong=sc.nextLine();
         }
-        sc.close();
     }
      
 }

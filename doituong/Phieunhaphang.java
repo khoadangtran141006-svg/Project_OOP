@@ -33,7 +33,7 @@ public class Phieunhaphang {
     }
 
     public void nhap() {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = doituong.Input.get();
         System.out.println("nhập mã phiếu: ");
         maphieu = sc.nextLine();
         System.out.print("Nhập ngày nhập (dd/MM/yyyy): ");
@@ -69,7 +69,7 @@ public class Phieunhaphang {
     public String getManv() {return manv;}
 
     public void setMaphieu(String maphieu) {this.maphieu = maphieu;}
-    public void setNgaynhap(LocalDate Ngaynhap) {this.ngaynhap = ngaynhap;}
+    public void setNgaynhap(LocalDate ngaynhap) {this.ngaynhap = ngaynhap;}
     public void setMancc(String mancc) {this.mancc = mancc;}
     public void setManv(String manv) {this.manv = manv;}
     public void setTongtien(int tongtien) {this.tongtien = tongtien;}

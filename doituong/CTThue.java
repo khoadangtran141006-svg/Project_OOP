@@ -5,7 +5,7 @@ public class CTThue{
         private String mahd;
         private String maphong;
         private int songuoi;
-        Scanner sc= new Scanner(System.in);
+        Scanner sc= doituong.Input.get();
         // Hàm thiết lập không tham số
         public CTThue(){}
 
@@ -60,7 +60,6 @@ public class CTThue{
             maphong=sc.nextLine();
             System.out.print("Nhập số người: ");
             songuoi=sc.nextInt();
-            sc.close();
         }
         public void xuat(){
             System.out.println("Mã hợp đồng: " +mahd);

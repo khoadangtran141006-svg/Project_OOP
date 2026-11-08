@@ -11,10 +11,9 @@ import java.util.Scanner;
 
 public class DSPhieunhaphang {
 
-    Scanner sc = new Scanner(System.in);
+    Scanner sc = doituong.Input.get();
     private int n;
     private Phieunhaphang[] dspnh;
-    private boolean isReading = false;
 
     public DSPhieunhaphang() {
         this.dspnh = new Phieunhaphang[0];
@@ -75,7 +74,6 @@ public class DSPhieunhaphang {
             System.out.println("File không tồn tại");
             return;
         }
-        isReading = true;
         Scanner scfile = new Scanner(file);
         n = 0;
         dspnh = new Phieunhaphang[0];
@@ -107,7 +105,6 @@ public class DSPhieunhaphang {
             }
         }
         scfile.close();
-        isReading = false;
         System.out.println("Đã đọc file thành công");
     }
 
@@ -178,7 +175,6 @@ public class DSPhieunhaphang {
     }
 
     public void xoa() {
-        Scanner sc = new Scanner(System.in);
         System.out.print("Nhập mã phiếu nhập hàng cần xóa: ");
         String ma = sc.nextLine();
 
@@ -228,14 +224,11 @@ public class DSPhieunhaphang {
     }
 
     public void sua() {
-        Scanner sc = new Scanner(System.in);
         System.out.print("Nhập mã phiếu hàng cần sửa: ");
         String ma = sc.nextLine();
-        boolean timma = false;
 
         for (int i = 0; i < n; i++) {
             if (dspnh[i].getMancc().equalsIgnoreCase(ma)) {
-                timma = true;
                 System.out.println("Tìm thấy mã phiếu cần sửa");
                 System.out.println("1. Sửa mã phiếu");
                 System.out.println("2. Sửa ngày nhập");

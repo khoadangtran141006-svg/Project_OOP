@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class DSHoaDon {
 
-    private Scanner sc = new Scanner(System.in);
+    private Scanner sc = doituong.Input.get();
     private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
     private int n;

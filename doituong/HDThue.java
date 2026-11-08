@@ -14,7 +14,7 @@ public class HDThue {
     private String manv;
     private int tongphongthue;
 
-    private static final Scanner sc = new Scanner(System.in);
+    private static final Scanner sc = doituong.Input.get();
 
     // Hàm thiết lập
     public HDThue() {

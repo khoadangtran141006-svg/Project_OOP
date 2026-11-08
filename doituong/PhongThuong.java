@@ -3,7 +3,7 @@ package doituong;
 import java.util.Scanner;
 
 public class PhongThuong extends Phong {
-    Scanner sc = new Scanner(System.in);
+    Scanner sc = doituong.Input.get();
     private double phisdvngoigio;
     private String dvuboi;
 

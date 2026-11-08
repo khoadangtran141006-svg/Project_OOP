@@ -3,7 +3,7 @@ package doituong;
 import java.util.Scanner;
 
 public class PhongVIP extends Phong {
-    Scanner sc = new Scanner(System.in);
+    Scanner sc = doituong.Input.get();
     private String freedv;
     private String bontamcaocap;
 

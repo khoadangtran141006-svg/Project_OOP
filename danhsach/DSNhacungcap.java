@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class DSNhacungcap {
 
-    Scanner sc = new Scanner(System.in);
+    Scanner sc = doituong.Input.get();
     private int n;
     private Nhacungcap[] dsncc;
     private boolean isReading = false;
@@ -227,14 +227,11 @@ public class DSNhacungcap {
     }
 
     public void sua() {
-        Scanner sc = new Scanner(System.in);
         System.out.print("Nhập mã nhà cung cấp cần sửa: ");
         String ma = sc.nextLine();
-        boolean timma = false;
 
         for (int i = 0; i < n; i++) {
             if (dsncc[i].getMancc().equalsIgnoreCase(ma)) {
-                timma = true;
                 System.out.println("Tìm thấy mã nhà cung cấp cần sửa");
                 System.out.println("1. Sửa mã nhà cung cấp");
                 System.out.println("2. Sửa tên nhà cung cấp");

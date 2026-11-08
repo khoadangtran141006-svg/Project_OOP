@@ -9,7 +9,7 @@ public class DSDichVu {
     private int n;
     private DichVu[] dsdv;
     private boolean isReading = false;
-    private final Scanner sc = new Scanner(System.in);
+    private final Scanner sc = doituong.Input.get();
 
     public DSDichVu() {
         n = 0;
@@ -185,7 +185,6 @@ public class DSDichVu {
                 DichVu dv = dsdv[i];
                 fw.write(dv.getMaDichVu() + "|" + dv.getTenDichVu() + "|" + dv.getDonGia() + "|" + dv.getSoLuong() + "\n");
             }
-            fw.close();
             System.out.println("[SUCCESS] Da luu danh sach phong vao file dichvu.txt");
         }
     }

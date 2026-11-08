@@ -31,7 +31,7 @@ public class CTphieunhaphang {
     }
 
     public void nhap() {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = doituong.Input.get();
         System.out.println("nhập mã phiếu: ");
         maphieu = sc.nextLine();
         System.out.println("nhập mã sản phẩm: ");

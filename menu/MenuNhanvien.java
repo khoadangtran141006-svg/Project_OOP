@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class MenuNhanvien {
 
     private DSNhanvien dsnv;
-    private Scanner sc = new Scanner(System.in);
+    private Scanner sc = doituong.Input.get();
 
     public MenuNhanvien(DSNhanvien dsNhanvienChung) {
         this.dsnv = dsNhanvienChung;

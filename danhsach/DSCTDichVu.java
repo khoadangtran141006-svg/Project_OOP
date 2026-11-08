@@ -9,7 +9,7 @@ public class DSCTDichVu {
     private CTDichVu[] ds;
     private int n;
     private boolean isReading = false;
-    Scanner sc = new Scanner(System.in);
+    Scanner sc = doituong.Input.get();
 
     public DSCTDichVu() {
         ds = new CTDichVu[0];

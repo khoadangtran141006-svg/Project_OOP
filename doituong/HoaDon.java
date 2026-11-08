@@ -9,7 +9,7 @@ import java.time.format.DateTimeParseException; // Danh sách chi tiết dịch 
 import java.util.Scanner;
 
 public class HoaDon {
-    private Scanner sc = new Scanner(System.in);
+    private Scanner sc = doituong.Input.get();
     private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
     // ===== THUỘC TÍNH =====

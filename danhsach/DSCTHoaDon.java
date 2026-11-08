@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class DSCTHoaDon {
 
-    private Scanner sc = new Scanner(System.in);
+    private Scanner sc = doituong.Input.get();
     private int n;
     private CTHoaDon[] dscthd;
     private DSDichVu dsdv;
@@ -130,11 +130,9 @@ public class DSCTHoaDon {
 
         // Tìm chi tiết
         CTHoaDon ct = null;
-        int index = -1;
         for (int i = 0; i < n; i++) {
             if (dscthd[i].getMaCTHoaDon().equalsIgnoreCase(maCT)) {
                 ct = dscthd[i];
-                index = i;
                 break;
             }
         }
@@ -212,7 +210,7 @@ public class DSCTHoaDon {
                     int soNgay = Integer.parseInt(parts[3].trim());
                     String maDV = parts[4].trim();
                     int soLuong = Integer.parseInt(parts[5].trim());
-                    double thanhTien = Double.parseDouble(parts[6].trim());
+                    Double.parseDouble(parts[6].trim());
 
                     CTHoaDon cthd = new CTHoaDon(maCT, maHD, maPhong, soNgay, maDV, soLuong);
                     themCT(cthd);

@@ -36,7 +36,7 @@ public class Nhanvien {
     }
 
     public void nhap() {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = doituong.Input.get();
         System.out.println("Nhập mã nhân viên: ");
         manv = sc.nextLine();
         System.out.println("Nhập họ: ");

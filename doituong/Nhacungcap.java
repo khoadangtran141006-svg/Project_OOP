@@ -30,7 +30,7 @@ public class Nhacungcap {
     }
 
     public void nhap() {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = doituong.Input.get();
         System.out.println("ma nha cung cap: ");
         mancc = sc.nextLine();
         System.out.println("ten nha cung cap: ");

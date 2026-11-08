@@ -6,11 +6,11 @@ public class MenuKhachHang {
     private DSKhachHang dskh;
     private Scanner sc;
     public MenuKhachHang(){
-        this.sc= new Scanner(System.in);
+        this.sc= doituong.Input.get();
         this.dskh= new DSKhachHang();
     }
     public MenuKhachHang(DSKhachHang dskh){
-        this.sc=new Scanner(System.in);
+        this.sc=doituong.Input.get();
         this.dskh=dskh;
     }
     public void chay(){
@@ -35,9 +35,7 @@ public class MenuKhachHang {
 
             switch(chon){
                 case 1 ->{
-                    KhachHang kt= new KhachHang();
-                    dskh.them(kt);
-                    System.out.println("Thêm chi tiết khách thuê thành công!");
+                    dskh.them();
                 }
                 case 2 ->{
                     System.out.print("Nhập mã khách thuê: ");
@@ -81,6 +79,5 @@ public class MenuKhachHang {
                 }
             }
         }while(chon!=0);
-        sc.close();
     }
 }

@@ -3,7 +3,7 @@ package doituong;
 import java.util.Scanner;
 
 public class Phong {
-    Scanner sc = new Scanner(System.in);
+    Scanner sc = doituong.Input.get();
     protected String maphong;
     protected String tenphong;
     protected String day;

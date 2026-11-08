@@ -13,20 +13,13 @@ public class MenuHDThue {
     private DSHDThue ds;
 
     public MenuHDThue() {
-        this.sc = new Scanner(System.in);
+        this.sc = doituong.Input.get();
         this.ds = new DSHDThue();
     }
 
     public MenuHDThue(DSHDThue dshdt) {
-        this.sc = new Scanner(System.in);
+        this.sc = doituong.Input.get();
         this.ds = dshdt;
-    }
-
-    private Date parseDate(String dateStr) throws ParseException {
-        if (dateStr == null || dateStr.trim().isEmpty()) {
-            return null;
-        }
-        return new SimpleDateFormat("dd/MM/yyyy").parse(dateStr.trim());
     }
 
     public void chay() {
@@ -83,16 +76,16 @@ public class MenuHDThue {
                         System.out.println("Không tìm thấy");
                     }
                 }
-                case 3 -> {
+                    case 3 -> {
                     System.out.print("Nhập mã hợp đồng cần tìm: ");
                     String mahd = sc.nextLine();
 
                     HDThue hd = ds.timkiem(mahd);
 
                     if (hd != null) {
-                      System.out.println(hd);
+                        System.out.println(hd);
                     } else {
-                    System.out.println("Không tìm thấy hợp đồng!");
+                        System.out.println("Không tìm thấy hợp đồng!");
                     }
                 }
                 case 4 -> {
@@ -141,7 +134,5 @@ public class MenuHDThue {
             }
 
         } while (chon != 0);
-
-        sc.close();
     }
 }

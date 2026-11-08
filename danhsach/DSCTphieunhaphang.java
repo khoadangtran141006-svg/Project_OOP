@@ -6,7 +6,7 @@ import java.util.*;
 
 public class DSCTphieunhaphang {
 
-    Scanner sc = new Scanner(System.in);
+    Scanner sc = doituong.Input.get();
     private int n;
     private CTphieunhaphang[] dsct;
     private boolean isReading = false;
@@ -168,7 +168,6 @@ public class DSCTphieunhaphang {
     }
 
     public void xoa() {
-        Scanner sc = new Scanner(System.in);
         System.out.print("Nhập mã phiếu cần xóa: ");
         String ma = sc.nextLine();
 
@@ -218,14 +217,11 @@ public class DSCTphieunhaphang {
     }
 
     public void sua() {
-        Scanner sc = new Scanner(System.in);
         System.out.print("Nhập mã phiếu cần sửa: ");
         String ma = sc.nextLine();
-        boolean timma = false;
 
         for (int i = 0; i < n; i++) {
             if (dsct[i].getMaphieu().equalsIgnoreCase(ma)) {
-                timma = true;
                 System.out.println("Tìm thấy mã của nhân viên cần sửa");
                 System.out.println("1. Sửa mã phiếu");
                 System.out.println("2. Sửa mã sp");

@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class MenuThongke {
 
-    private Scanner sc = new Scanner(System.in);
+    private Scanner sc = doituong.Input.get();
     private DSKhachHang dskh;
     private DSHoaDon dshd;
 
